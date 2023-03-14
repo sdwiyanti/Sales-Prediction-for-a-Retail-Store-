@@ -23,7 +23,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
     output = {}
-    if phase_codename == "test":
+    if phase_codename == "dev":
         print("Evaluating for Test Phase")
         output["result"] = [
             {
