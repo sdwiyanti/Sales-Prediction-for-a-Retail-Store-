@@ -28,12 +28,12 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "test_split": {
-                    'Mean Absolute Error (MAE)': mae,
-                    'Mean Squared Error (MSE)' : mse,
-                    'Root Mean Squared Error (RMSE)' : rmse,
-                    'R-squared (R2)' : r2,
-                    'Explained Variance Score (EVS)' : evs,
-                    'Mean Absolute Percentage Error (MAPE)' : mape,
+                    'Mean-absolute-error': mae,
+                    'Mean-squared-error' : mse,
+                    'Root-mean-squared-error' : rmse,
+                    'R-squared' : r2,
+                    'Explained-variance-score' : evs,
+                    'Mean-absolute-percentage-error' : mape,
                 }
             }
         ]
