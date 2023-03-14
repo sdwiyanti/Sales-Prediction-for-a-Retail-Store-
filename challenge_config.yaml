@@ -19,14 +19,30 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Metric1", "Metric2", "Metric3", "Total"],
-        "default_order_by": "Total",
+        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score", "Mean-absolute-percentage-error(%)"],
+        "default_order_by": "Mean-absolute-error",
         "metadata": {
-          "Metric1": {
+          "Mean-absolute-error": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
-          "Metric2": {
+          "Mean-squared-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Root-mean-squared-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "R-squared": {
+            "sort_ascending": False,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Explained-variance-score": {
+            "sort_ascending": False,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Mean-absolute-percentage-error(%)": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
