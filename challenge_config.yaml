@@ -19,7 +19,7 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score", "Mean-absolute-percentage-error"],
+        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score"],
         "default_order_by": "Mean-absolute-error",
         "metadata": {
           "Mean-absolute-error": {
@@ -41,10 +41,6 @@ leaderboard:
           "Explained-variance-score": {
             "sort_ascending": False,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          "Mean-absolute-percentage-error": {
-            "sort_ascending": True,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
       }
@@ -59,7 +55,7 @@ challenge_phases:
     start_date: 2019-01-19 00:00:00
     end_date: 2099-04-25 23:59:59
     test_annotation_file: annotations/annotations_testsplit.csv
-    codename: dev
+    codename: aa
     max_submissions_per_day: 5
     max_submissions_per_month: 50
     max_submissions: 50
