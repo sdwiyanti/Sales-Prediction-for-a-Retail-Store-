@@ -19,8 +19,34 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Mean Absolute Error (MAE)", "Mean Squared Error (MSE)", "Root Mean Squared Error (RMSE)", "R-squared (R2)", "Explained Variance Score (EVS)", "Mean Absolute Percentage Error (MAPE)"],
-        "default_order_by": "Mean Absolute Error (MAE)",
+        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score", "Mean-absolute-percentage-error"],
+        "default_order_by": "Mean-absolute-error",
+        "metadata": {
+          "Mean-absolute-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Mean-squared-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Root-mean-squared-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "R-squared": {
+            "sort_ascending": False,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Explained-variance-score": {
+            "sort_ascending": False,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Mean-absolute-percentage-error": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+        }
       }
 
 challenge_phases:
