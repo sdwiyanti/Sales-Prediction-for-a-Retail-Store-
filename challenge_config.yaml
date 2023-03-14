@@ -11,8 +11,8 @@ leaderboard_description: Please submit your results to the Phase (See ``Evaluati
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
 is_docker_based: False
-start_date: 2023-02-01 00:00:00
-end_date: 2023-05-01 23:59:59
+start_date: 2019-01-19 00:00:00
+end_date: 2099-04-25 23:59:59
 published: True
 
 leaderboard:
