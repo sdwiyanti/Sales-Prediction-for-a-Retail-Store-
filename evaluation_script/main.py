@@ -33,7 +33,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
                     'Root-mean-squared-error' : rmse,
                     'R-squared' : r2,
                     'Explained-variance-score' : evs,
-                    'Mean-absolute-percentage-error' : mape,
+                    'Mean-absolute-percentage-error(%)' : mape,
                 }
             }
         ]
