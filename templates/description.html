@@ -1,3 +1,67 @@
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+<p>
+    The data scientists at BigMart have collected 2013 sales data for 1559 products across 10 stores in different cities. Also, certain attributes of each product and store have been defined. The aim is to build a predictive model and find out the sales of each product at a particular store.
+  </p>
+<p>
+    Using this model, we will predict the optimal store set-up that would maximize product sales. By understanding the effects of product attributes, the properties of products, store location, and outlet type, which play a key role in increasing sales.
+  </p>
+<p>
+    We have 14204 samples in data set. You can get all the data<a href="https://drive.google.com/file/d/1YfvrjNCjg9xXbK-a3nWvJLYSYuLxL04Z/view?usp=share_link"></a>HERE.
+    <p>The files are:</p>
+    <ul dir="auto">
+        <li><strong>train_data.csv</strong>: 11364 labeled training examples</li>
+        <li><strong>test_data.csv</strong>: 2841 unlabeled test examples</li>
+        </ul>
+  </p>
+  <h6><b>
+    Variable Description
+  </b></h6>
+  <table>
+    <thead>
+    <tr>
+    <th>Column name</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>Item_Identifier</strong></td>
+    <td>A code provided for the item of sale.</td>
+    </tr>
+    <tr>
+    <td><strong>Item_Weight</strong></td>
+    <td>Weight of the product in kilograms.</td>
+    </tr>
+    <tr>
+    <td><strong>Item_Fat_Content</strong></td>
+    <td>A categorical column of how much fat is present in the item: 'Low Fat', 'Regular'.</td>
+    </tr>
+    <tr>
+    <td><strong>Item_Type</strong></td>
+    <td>What category does the item belong to: 'Dairy', 'Soft Drinks', 'Meat', 'Fruits and Vegetables', 'Household', 'Baking Goods', 'Snack Foods', 'Frozen Foods', 'Breakfast', 'Health and Hygiene', 'Hard Drinks', 'Canned', 'Breads', 'Starchy Foods', 'Others', 'Seafood'.</td>
+    </tr>
+    <tr>
+    <td><strong>Item_MRP</strong></td>
+    <td>The maximum retail price of the product.</td>
+    </tr>
+    <tr>
+    <td><strong>Outlet_Identifier</strong></td>
+    <td>A code provided for the item of sale.</td>
+    </tr>
+    <tr>
+    <td><strong>Outlet_Establishment_Year</strong></td>
+    <td>The year the outlet was established.</td>
+    </tr>
+    <tr>
+    <td><strong>Outlet_Location_Type</strong></td>
+    <td>A categorical column to describe the location of the outlet: 'Tier 1', 'Tier 2', 'Tier 3'.</td>
+    </tr>
+    <tr>
+    <td><strong>Outlet_Type</strong></td>
+    <td>Categorical column for type of outlet: 'Supermarket Type1', 'Supermarket Type2', 'Supermarket Type3', 'Grocery Store'.</td>
+    </tr>
+    <tr>
+    <td><strong>Item_Outlet_Sales</strong></td>
+    <td>The number of sales for an item.</td>
+    </tr>
+    </tbody>
+    </table>
