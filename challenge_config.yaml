@@ -16,7 +16,7 @@ end_date: 2023-05-01 23:59:59
 published: True
 
 leaderboard:
-  - id: 2
+  - id: 1
     schema:
       {
         "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score", "Average"],
@@ -50,7 +50,7 @@ leaderboard:
       }
 
 challenge_phases:
-  - id: 2
+  - id: 1
     name: Test Phase
     description: templates/challenge_phase_1_description.html
     leaderboard_public: False
@@ -78,8 +78,8 @@ dataset_splits:
     codename: test_split
 
 challenge_phase_splits:
-  - challenge_phase_id: 2
-    leaderboard_id: 2
+  - challenge_phase_id: 1
+    leaderboard_id: 1
     dataset_split_id: 1
     visibility: 3
     leaderboard_decimal_precision: 2
