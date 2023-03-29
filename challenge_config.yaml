@@ -43,7 +43,7 @@ leaderboard:
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
           "Average": {
-            "sort_ascending": False,
+            "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
@@ -83,4 +83,4 @@ challenge_phase_splits:
     dataset_split_id: 1
     visibility: 3
     leaderboard_decimal_precision: 2
-    is_leaderboard_order_descending: True
+    is_leaderboard_order_descending: False
