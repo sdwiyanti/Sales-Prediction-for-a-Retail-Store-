@@ -20,7 +20,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     rmse = mean_squared_error(y_true, y_pred, squared=False)
     r2 = r2_score(y_true, y_pred)
     evs = explained_variance_score(y_true, y_pred)
-    mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+#     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
     wa = (mae * 0.2) + (mse * 0.3) + (rmse * 0.3) + (r2 * 0.1) + (evs * 0.1)
 
     output = {}
@@ -34,7 +34,6 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
                     'Root-mean-squared-error' : rmse,
                     'R-squared' : r2,
                     'Explained-variance-score' : evs,
-                    'Mean-absolute-percentage-error(%)' : mape,
                     'Average' : wa,
                 }
             }
