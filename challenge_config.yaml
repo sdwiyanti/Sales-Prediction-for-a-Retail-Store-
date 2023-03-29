@@ -43,7 +43,7 @@ leaderboard:
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
           "Average": {
-            "sort_ascending": True,
+            "sort_ascending": False,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
