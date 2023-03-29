@@ -19,8 +19,8 @@ leaderboard:
   - id: 2
     schema:
       {
-        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score"],
-        "default_order_by": "Mean-absolute-error",
+        "labels": ["Mean-absolute-error", "Mean-squared-error", "Root-mean-squared-error", "R-squared", "Explained-variance-score", "Average"],
+        "default_order_by": "Average",
         "metadata": {
           "Mean-absolute-error": {
             "sort_ascending": True,
@@ -40,6 +40,10 @@ leaderboard:
           },
           "Explained-variance-score": {
             "sort_ascending": False,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          },
+          "Average": {
+            "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
         }
