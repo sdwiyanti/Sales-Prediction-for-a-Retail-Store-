@@ -11,7 +11,7 @@ leaderboard_description: Please submit your results to the Phase (See ``Evaluati
 evaluation_script: evaluation_script.zip
 remote_evaluation: False
 is_docker_based: False
-start_date: 2023-04-01 00:00:00
+start_date: 2023-03-01 00:00:00
 end_date: 2024-05-01 23:59:59
 published: True
 
@@ -44,7 +44,7 @@ leaderboard:
           },
           "Average": {
             "sort_ascending": False,
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description": "Weighted Average Score.",
           }
         }
       }
@@ -56,7 +56,7 @@ challenge_phases:
     leaderboard_public: False
     is_public: True
     is_submission_public: True
-    start_date: 2023-04-01 00:00:00
+    start_date: 2023-03-01 00:00:00
     end_date: 2024-05-01 23:59:59
     test_annotation_file: annotations/annotations_testsplit.csv
     codename: dev
