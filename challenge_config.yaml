@@ -24,18 +24,23 @@ leaderboard:
         "metadata": {
           "Mean-absolute-error": {
             "sort_ascending": True,
+            "description": "",
           },
           "Mean-squared-error": {
             "sort_ascending": True,
+            "description": "",
           },
           "Root-mean-squared-error": {
             "sort_ascending": True,
+            "description": "",
           },
           "R-squared": {
             "sort_ascending": False,
+            "description": "",
           },
           "Explained-variance-score": {
             "sort_ascending": False,
+            "description": "",
           },
           "Average": {
             "sort_ascending": True,
