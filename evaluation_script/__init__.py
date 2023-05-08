@@ -7,7 +7,7 @@ def install(package):
     Install a pip python package
 
     Args:
-        package ([str]): statsmodels 0.14.0
+        package ([str]): statsmodels==0.14.0
     
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
