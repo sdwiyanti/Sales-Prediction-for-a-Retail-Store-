@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-import statsmodels.api as sm
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from scipy.stats import linregress
 
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
@@ -21,7 +20,7 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     mse = mean_squared_error(y_true, y_pred)
     rmse = mean_squared_error(y_true, y_pred, squared=False)
 
-    r2 = sm.OLS(y_true, y_pred).fit().rsquared
+    r2 = r2_score(y_true, y_pred)
     slope, intercept, r_value, p_value, std_err = linregress(y_true, y_pred)
     evs = r_value ** 2
     
