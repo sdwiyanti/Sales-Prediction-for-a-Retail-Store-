@@ -8,6 +8,7 @@ def install(package):
 
     Args:
         package ([str]): statsmodels==0.14.0
+        package ([str]): scipy==1.10.1
     
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
