@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from scipy.stats import linregress
+from sklearn.metrics import mean_absolute_error, mean_squared_error, explained_variance_score, r2_score
 
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
     # Load the ground truth labels and predictions into pandas dataframes
@@ -19,11 +18,8 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     mae = mean_absolute_error(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
     rmse = mean_squared_error(y_true, y_pred, squared=False)
-
     r2 = r2_score(y_true, y_pred)
-    slope, intercept, r_value, p_value, std_err = linregress(y_true, y_pred)
-    evs = r_value ** 2
-    
+    evs = explained_variance_score(y_true, y_pred)
     wa = (mae * 0.2) + (mse * 0.3) + (rmse * 0.3) + (r2 * 0.1) + (evs * 0.1)
 
     output = {}
