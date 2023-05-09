@@ -34,5 +34,5 @@ install("requests==2.25.1")
 
 # Install custom packages
 install("statsmodels==0.13.5")
-install("scipy==1.10.1")
+install("scipy==1.7.3")
 install_local_package("package_folder_name")
